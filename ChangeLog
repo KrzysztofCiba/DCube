@@ -1,0 +1,225 @@
+2010-08-25  Krzysztof Daniel Ciba  <cibak@localhost.localdomain>
+	* python/DCubeTester.py fix for absence of ref object
+	* svn tag DCubeClient-00-00-38
+
+2010-08-11  Krzysztof Daniel Ciba  <cibak@localhost.localdomain>
+	* python/DozerPlotter.py for in projection Y plot
+	* svn tag DCubeClient-00-00-37
+	
+2010-08-03  Krzysztof Daniel Ciba  <cibak@localhost.localdomain>
+	* test/DCubeClient_TestConfiguration.xml new format
+	* svn tag DCubeClient-00-00-36
+
+2010-08-02  Krzysztof Daniel Ciba  <cibak@localhost.localdomain>
+	* python/DCubePlotter.py fix for projX and projY of TH2
+	* svn tag DCubeClient-00-00-35 ???
+
+2010-05-31  Krzysztof Ciba  <cibak@lxplus255.cern.ch>
+	* python/DCubePHPWriter.py fix in php paths
+	* svn tag DCubeClient-00-00-33
+
+2010-02-15  Krzysztof Daniel Ciba  <cibak@pb-d-128-141-141-24.cern.ch>
+	* python/ removing unnecessary files
+
+2010-02-15  Krzysztof Ciba  <cibak@lxplus237.cern.ch>
+
+	* RTT/DCubeRunner.py fix in shell script
+
+2010-02-15  Krzysztof Ciba  <cibak@lxplus237.cern.ch>
+
+	* RTT/DCubeForRTTCfg.xml removing bin version settings
+	* RTT/DCubeRunner.py setting root and python version from Atlas env 
+	* svn tag DCubeClient-00-00-32
+
+2009-10-06  Krzysztof Ciba  <cibak@lxplus242.cern.ch>
+
+	* RTT/DCubeForRTTConfig.xml switch to root 5.25.02
+	* svn tag DCubeClient-00-00-31 
+
+2009-10-01  Krzysztof Ciba  <cibak@lxplus218.cern.ch>
+
+	* test/ref.C fix writing tprofiles to file
+	* test/test.C fix writing tprofiles to file
+	* svn tag DCubeClient-00-00-30
+
+2009-09-15  Krzysztof Ciba  <cibak@lxplus242.cern.ch>
+
+	* share/DCubeValid.xml new patterns for i686-slc4-gcc43-{dbg,opt}
+	* svn branch DCubeClient-00-00-28-01 for ew test bbbe 
+	* svn tag DCubeClient-00-00-29
+	
+2009-09-11  Krzysztof Ciba  <cibak@lxplus240.cern.ch>
+
+	* share/DCubeValid.xml new patterns for branches NN.N.X.Y and NN.N.X.Y-VAL
+	* svn tag DCubeClient-00-00-28
+
+2009-08-14  Krzysztof Ciba  <cibak@lxplus245.cern.ch>
+
+	* RTT/DCubeRunner.py fix in CMTCONFIG ret from RTT
+	* svn tag DCubeClient-00-00-27
+
+2009-08-14  Krzysztof Daniel Ciba  <cibak@pb-d-128-141-141-39.cern.ch>
+
+	* RTT/DCubeForRTTCfg.xml switch to root 5.22.00d
+	* RTT/DCubeRunner.py switch to new RTT production directory
+	* svn tag DCubeClient-00-00-26
+
+2009-06-15  Krzysztof Ciba  <cibak@lxplus246.cern.ch>
+
+	* python/DCubePlotter.py bugfix in plotting
+	* python/DCUbeTester.py bugfix in chi2 testing
+	* svn tag DCubeCLient-00-00-25
+
+2009-02-04  Krzysztof Ciba  <cibak@lxplus237.cern.ch>
+	* python/DCubeConfig.py bug fix in DCubeConfig.__match function 
+	* cvs tag DCubeClient-00-00-25
+
+2009-01-26  Krzysztof Ciba  <cibak@lxplus222.cern.ch>
+	* python/DCubePlotter.py small fix in plots unzooming
+	* python/dcubeConvert.py fix to get objects from root "/" TFile directory
+	* cvs tag DCubeClient-00-00-24
+
+
+2009-01-23  Krzysztof Ciba  <cibak@lxplus249.cern.ch>
+	* python/DCubePlotter.py small fix in plotting of TH 
+	* cvs tag DCubeClient-00-00-23
+	
+2009-01-21  Krzysztof Daniel Ciba  <cibak@lxplus250.cern.ch>
+	* python/DCubeConfig.py added additional 'plotopts' attribute to all root objects
+	   - valid 'plotopts' values are semicolon separated list of 'logx', 'logy', 'logz' and 'norm'
+              - 'logx' -> log scale on x axis
+	      - 'logy' -> log scale on y axis
+	      - 'logz' -> log scale on z axis
+	      - 'norm' -> normalize plots
+	* python/DCubePlotter.py small changes in plotting
+	* share/DCubeValid.xml added CMTCONFIGs for slc5 
+        * cvs tag DCubeClient-00-00-22
+	
+2008-12-17  Krzysztof Ciba  <cibak@lxplus247.cern.ch>
+
+	* python/DCubeOptParser.py added option argument meany for avr eff meanY test for profile histograms
+	
+
+2008-12-12  Krzysztof Daniel Ciba  <cibak@pb-d-128-141-81-146.cern.ch>
+
+	* python/DCubeApp.py 
+	- default output xml name extension changed to ".dcube.xml"
+	- default output php name extension changed to ".dcube.xml.php"
+	* python/DCubePlotter.py change the way of plotting
+	 - ROOT.TCanvas size once again is 600x600 px
+	 - added histogram title to plot
+	 - usage of TrueType fonts when possible
+	 - colors of monitored and reference objects reverted 
+	* python/DCubeTester.py added meanY test for ROOT.TProfile and ROOT.TProfile2D
+	* cvs tag DCubeClient-00-00-21
+
+2008-11-12  Krzysztof Ciba  <cibak@lxplus216.cern.ch>
+
+	* python/dcubeConvert.py added option to specify reference root file
+	* RTT/DCubeRunner.py the way of invoking dcubeConvert.py changed
+	* cvs tag DCubeClient-00-00-20
+
+2008-11-12  Krzysztof Ciba  <cibak@lxplus216.cern.ch>
+
+	* python/DCubePlotter.py fix bug in TCanvas.SaveAs(), now it using absolute path for png files
+	* cvs tag DCubeClient-00-00-19
+	
+2008-11-10  Krzysztof Ciba  <cibak@lxplus215.cern.ch>
+
+	* RTT/DCubeRunner.py new runner for RTT, needs testing
+	* cvs tag DCubeClient-00-00-18
+	
+2008-11-07  Krzysztof Ciba  <cibak@lxplus256.cern.ch>
+
+	* python/DCubeApp.py fix bug preventing to read objects from root file in root directory
+	
+
+2008-10-27  Krzysztof Ciba  <cibak@lxplus250.cern.ch>
+	
+	* python/dcubeConvert.py new file to convert old config to the new configuration format
+	* python/DCubePlotter.py small fix in DCubePlotter.__plotTH2()
+	
+2008-10-23  Krzysztof Ciba  <cibak@lxplus250.cern.ch>
+
+	* python/DCubeTester.py added counters for stat test for TDirectories elements
+		
+2008-10-22  Krzysztof Ciba  <cibak@lxplus250.cern.ch>
+
+	* python/DCubePlotter.py new file, plotting ready to use
+	* python/DCubeTester.py added summary to output XML
+	* python/dcube.py small change to get proper order of imports  
+
+2008-10-13  Krzysztof Ciba  <cibak@lxplus245.cern.ch>
+
+	* new almost working version (only plotting is switched off)
+	* python/dcube.py new skeleton application
+	* python/DCubeApp.py new file with DCubeApp class
+	* python/DCubeOptParser.py new file with DCubeOptParser class
+	* python/DCubeConfig.py new file with DCubeConfig class
+	* python/DCubePHPWriter.pt new file with DCubePHPWriter class
+	* python/DCubeUtils.py new file with DCubeObject, DCubeLogger and DCubeSingleton classes
+	* python/DCubeTester.py new file with DCubeTester class
+	* python/DCubePlotter.py new file with DCubePlotter class
+	* python/DCubeValid.py new file with DCubeValid class
+	* share/DCubeValid.xml new internal XML file with valid config names 
+	
+2008-04-28 Krzysztof Ciba <cibak@lxplus236.cern.ch>
+	* python/dcube.py removed DQMF Status and Config retreiving
+	* cvs tag DCubeClient-00-00-17
+
+2008-04-10 Krzysztof Ciba <cibak@lxplus239.cern.ch>
+	* fix typo in DCubeRunner.py
+	* cvs tag DCubeClient-00-00-16
+
+2008-04-10 Krzysztof Ciba <cibak@lxplus239.cern.ch>
+	* RTT/DCubeForRTTCfg.xml - change to root 5.19/02, python 2.5 and DCubeServer-00-00-10
+	* RTT/DCubeRunner.py - postprocessing call to linux convert removed
+	* cvs tag DCubeClient-00-00-15 
+
+2008-02-25 Krzysztof Ciba <cibak@lxplus229.cern.ch>
+	* RTT/DCubeRunner.py now run() returns status code to the RTT framework
+	* cvs tag DCubeClient-00-00-14
+
+2008-01-25 Krzysztof Ciba <cibak@lxplus.cern.ch>
+	* python/dcube.py fixed typo in dcube config parsing thanks to Frank Winklmeier
+	* cvs tag DCubeClient-00-00-13
+	
+	
+2008-01-14 Krzysztof Ciba <cibak@lxplus.cern.ch>
+	* python/dcube.py bug fix in dcube.attachSubDirs function, thanks to Shuwei Ye
+	* cvs tag DCubeClient-00-00-12
+
+2007-11-21 Krzysztof Ciba <cibak@lxplus211.cern.ch>
+	* python/dcube.py new procedures to create output XML for new DCubeServer version
+	* this version should be used with DCubeServer-00-00-04 or higher
+	* cvs tag DCubeClient-00-00-11
+	
+
+2007-11-15 Krzysztof Ciba <cibak@lxplus203.cern.ch>
+	* share/DCubeClient_jobOption.py set max event to 1... huh!, w/o Gaudi/Athena loops forever
+	* cvs tag DCubeClient-00-00-10
+	
+2007-11-14  Krzysztof Ciba <cibak@lxplus230.cern.ch>
+	* share/DCubeClient_jobOptions.py dummy Jo file added
+	* test/DCubeClient_testConfiguration.xml removed dependency from HelloWorld, new Jo introduced
+	* cvs tag DCubeClient-00-00-09
+
+2007-11-13  Krzysztof Ciba <cibak@lxplus239.cern.ch>
+
+	* python/dcube.py new class for summary table + printing summary table in log INFO added
+	* cvs tag DCubeClient-00-00-08
+	
+
+2007-10-23  Krzysztof Ciba  <cibak@lxplus098.cern.ch>
+
+	* scripts/setup.csh new file for setting up env in (t)csh shell, uses root 5.17/04
+	* scripts/setup.sh  new file for setting up env in sh, zsh and bash shells, uses root 5.17/04   
+	* RTT/DCubeRunner.py new file (should be a part of RTTLibraryTools)
+	* RTT/DCubeForRTT.xml DCube XML configuration for RTT used by DCubeRunner.py 
+	* python/dcube.py  few small fixes in dcube::flatTester() 
+	
+2007-09-17  Krzysztof Ciba  <cibak@lxplus214.cern.ch>
+
+	* ChangeLog - new file, for previous changes see ChangeLog inside DCubeServer
+	* python/dcube.py - added support for inclusive mode 
+

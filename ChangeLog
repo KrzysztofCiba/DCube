@@ -1,0 +1,156 @@
+2009-01-21  Krzysztof Ciba  <cibak@lxplus246.cern.ch>
+
+	* server/css/dcube.css.php small fix in div.his width
+	* server/dcube.php small fix in logger href
+	* cvs tag DCubeServer-00-00-14
+	
+	
+
+2008-12-15  Krzysztof Ciba  <cibak@lxplus203.cern.ch>
+
+	* server/css/dcube.css.php changed plot image size
+	* server/dcube.php changed Summary and TProfile views 
+	* cvs tag DCubeServer-00-00-13
+
+2008-11-11  Krzysztof Ciba  <cibak@lxplus232.cern.ch>
+
+	* server/dcube.php fix bug displaying errors from DCubeClient
+	* cvs tag DCubeServer-00-00-12
+
+2008-11-10  Krzysztof Ciba  <cibak@lxplus215.cern.ch>
+
+	* server/dcube.php fix relative path in PHP processing 
+
+2008-10-31  Krzysztof Ciba  <cibak@lxplus248.cern.ch>
+
+	* server/css/dcube.css.php removed w anf h for img.plot
+
+2008-10-24  Krzysztof Ciba  <cibak@lxplus250.cern.ch>
+
+	* server/images/graph.gif new file
+	* server/images/profile.gif new file
+	* server/dcube.php dcube_body class rewritten to follow changes in new DCubeClient output format
+	* server/dcube.js.php few changes in showhide(), new function selPlot() [see above]
+	* server/css/dcube.css.php few cosmetic changes in CSS
+	
+2008-04-28 Krzysztof Ciba <cibak@lxplus236.cern.ch>
+	* server/images/loading_plot.gif new file added
+	* server/css/dcube.css file removed
+	* server/dcube.js file removed
+	* server/dcube.php changes in display summary tables, DCube status for histograms and preloading normal plot for tree-like view
+	* cvs tag DCubeServer-00-00-11
+
+2008-04-02 Krzysztof Daniel Ciba <cibak@lxplus216.cern.ch>
+	* server/dcube.php, server/css/dcube.css.php:
+	fixed display of (sub)directories summary tables
+	* removed DQMF stuff
+	* cvs tag DCubeServer-00-00-10
+
+
+2008-02-04 Krzysztof daniel Ciba <cibak@lxplus225.cern.ch>
+	* server/dcube.php - fix display of reference underflows/overflows
+	* server/dcube.php server/css/dcube.css.php fx display of middle panel information
+	* cvs tag DCubeServer-00-00-09 
+
+2008-01-29 Krzysztof Daniel Ciba <cibak@lxplus.cern.ch>
+	* server/dcube.php fix in plot files finding procedure 
+	* cvs tag DCubeServer-00-00-08
+	
+2008-01-25 Krzysztof Daniel Ciba <cibak@lxplus.cern.ch>
+	* gzipping contents added 
+	* server/dcube.php improved plot view for speed
+	* new files: server/preLoading.js server/dcube.js.php /server/css/dcube.css.php
+	* cvs tag DCubeServer-00-00-07
+	
+2008-01-21 Krzysztof Daniel Ciba <cibak@lxplus.cern.ch>
+	* server/dcube.php improved tree-like display for speed 
+	* images/holder.gif new file
+	* cvs tag DCubeServer-00-00-06
+	
+2007-12-07 Krzysztof Daniel Ciba <cibak@lxplus.cern.ch>
+	* tab panels for normal, plots and summary views added
+	* new files: ./images/sel_tabpane_* ./images/tabpane_*
+	* cvs tag DCubeServer-00-00-05
+
+2007-11-21  Krzysztof Daniel Ciba <cibak@lxplus211.cern.ch>
+	* brand new tree-like display
+	* should be used with DCubeClient-00-00-11 or higher
+	* cvs tag DCubeServer-00-00-04
+
+2007-11-12  Krzysztof Daniel Ciba <cibak@lxplus098.cern.ch>
+	* tagged as DCubeServer-00-00-02
+	* server/dcube.js - added 'on demand' pictures loading 
+	* server/dcube.php - few changes to 'on demand' pictures loading, code cleanig
+
+2007-10-08  Krzysztof Daniel Ciba  <cibak@pb-d-128-141-81-149.cern.ch>
+
+	* tagged as DCubeServer-00-00-01 
+	* server/rw.php new file added 
+
+
+2007-08-24  Krzysztof Ciba  <cibak@lxplus096.cern.ch>
+
+	* importing dcube to the CVS repository
+
+2007-08-16  Krzysztof Daniel Ciba  <cibak@pb-d-128-141-81-160.cern.ch>
+
+	* python/dcube.py : updated documentation, completely rewritten scannign function 
+
+2007-08-15  Krzysztof Daniel Ciba  <cibak@pb-d-128-141-81-178.cern.ch>
+
+	* dcube.php, dcube.js : changes in UI, fixing some bugs and probably introducing a few new :)
+	* css/dcube.css : change in displaying plots
+	
+
+2007-08-10  Krzysztof Daniel Ciba  <cibak@pb-d-128-141-81-144.cern.ch>
+	* python/dcube.py : ref histogram statistics added, new XML config parsing function
+	* dcube.php : changing the display for ref statistics 
+	* rw.php : new file to colour log files
+	
+2007-06-21  Krzysztof CIBA  <cibak@pcatlas188.cern.ch>
+
+	* doc/html/*.*  : added Doxygen generated API documentation for python part
+	
+
+2007-06-14  Krzysztof CIBA  <cibak@pcatlas188.cern.ch>
+
+	* dcube.php : added wordwrapping of the name of histogram or directorie to avoid 
+	table resizing
+
+2007-06-13  Krzysztof Ciba  <cibak@lxplus210.cern.ch>
+
+	* webdq.xsd : new tag for p-value limit <plimit fail="" warn="">
+	* dcube.py  : changes to cope with new XML Schema
+	* dcube.php : changes to cope with new XML Schema
+
+2007-06-11  Krzysztof CIBA  <cibak@pcatlas188.cern.ch>
+
+	* doc/html : new directory with doxygen generated API documentation (except python + JavaScript 
+	parts)
+
+2007-06-08  Krzysztof CIBA  <cibak@pcatlas188.cern.ch>
+
+	* dcube.php : invoking of class dcube has changed, you can suppres of printing HTML by setting 
+	third arg of constructor to something (but diff from PHP NULL), BTW this time dcube printing 
+	WHOLE PAGE (from "!DOCTYPE... <html>" to "</html>" !!!)
+	* index.php : a few lines removed
+	* test : rearranging tests directory structure, removing unnecessary files and directories  
+	* dcube.py : cleaning up the code 
+
+2007-06-05  Krzysztof CIBA  <cibak@pcatlas188.cern.ch>
+
+	* dcube.css : width style for all td tag set to 17.5% 
+	* dcube.js:toggleRows() : new functionality to change image of TDirectory
+	* dcube.php : added new calling for toggleRows() and new id attribute 
+	to each image
+
+2007-05-31  Krzysztof CIBA  <cibak@pcatlas188.cern.ch>
+
+	* ChangeLog : new file added
+
+
+
+
+	
+
+	

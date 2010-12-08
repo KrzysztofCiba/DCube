@@ -1,0 +1,6 @@
+package DCubeServer
+author Krzysztof Daniel Ciba <Krzysztof.Ciba@NOSPAMagh.edu.pl>
+
+use AtlasPolicy AtlasPolicy-*
+
+
